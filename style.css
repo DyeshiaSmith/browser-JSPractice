@@ -7,9 +7,15 @@
 body {
   /* try to load the font family from google, otherwise use a build in font. */
   font-family: "Montserrat", cursive;
-  font-size: 12px;
+  font-size: 10px;
+  line-height: 1.65;
 }
 
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+}
 
 h1 {
   font-size: 3.052em;
@@ -23,4 +29,8 @@ h3 {
   font-size: 1.953em;
 }
 
-p
+p,
+li,
+a {
+  font-size: 1.266em;
+}
