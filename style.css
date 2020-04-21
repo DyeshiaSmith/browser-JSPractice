@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #C34A36;
+--secondary-color: #B0A8B9;
+---tertiary-color: #D5CABD;
+}
+
+body {
+  /* try to load the font family from google, otherwise use a build in font. */
+  font-family: "Montserrat", cursive;
+}
