@@ -7,4 +7,20 @@
 body {
   /* try to load the font family from google, otherwise use a build in font. */
   font-family: "Montserrat", cursive;
+  font-size: 12px;
 }
+
+
+h1 {
+  font-size: 3.052em;
+}
+
+h2 {
+  font-size: 2.441em;
+}
+
+h3 {
+  font-size: 1.953em;
+}
+
+p
