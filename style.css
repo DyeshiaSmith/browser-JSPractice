@@ -1,14 +1,20 @@
 :root {
-..--color-primary: .#C34A36;
-..--secondary-color: .#B0A8B9;
-..--tertiary-color: .#D5CABD;
+  --color-primary: #C34A36;
+  --secondary-color: #B0A8B9;
+  --tertiary-color: #D5CABD;
 }
 
 body {
   /* try to load the font family from google, otherwise use a build in font. */
-  font-family: "Montserrat", cursive;
+  font-family: "Open Sans", sans-serif;
   font-size: 10px;
   line-height: 1.65;
+}
+
+header {
+  background: var(--color-primary);
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -18,7 +24,9 @@ h3 {
 }
 
 h1 {
+  color: black;
   font-size: 3.052em;
+  text-align: center;
 }
 
 h2 {
@@ -34,4 +42,13 @@ li,
 a,
 figcaption {
   font-size: 1.266em;
+}
+
+/* Utility Class */
+
+/* https://css-tricks.com/snippets/css/accessibilityseo-friendly-css-hiding/ */
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
