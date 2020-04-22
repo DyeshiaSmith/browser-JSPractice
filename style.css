@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #C34A36;
---secondary-color: #B0A8B9;
----tertiary-color: #D5CABD;
+..--color-primary: .#C34A36;
+..--secondary-color: .#B0A8B9;
+..--tertiary-color: .#D5CABD;
 }
 
 body {
@@ -31,6 +31,7 @@ h3 {
 
 p,
 li,
-a {
+a,
+figcaption {
   font-size: 1.266em;
 }
