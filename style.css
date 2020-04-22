@@ -2,6 +2,8 @@
   --color-primary: #C34A36;
   --secondary-color: #B0A8B9;
   --tertiary-color: #D5CABD;
+
+
 }
 
 body {
@@ -15,7 +17,10 @@ header {
   background: var(--color-primary);
   display: flex;
   justify-content: center;
-  color: hotpink;
+  padding: 1rem;
+}
+header img {
+
 }
 
 h1,
@@ -43,6 +48,15 @@ li,
 a,
 figcaption {
   font-size: 1.266em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* Utility Class */
