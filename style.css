@@ -1,9 +1,8 @@
 :root {
   --color-primary: #C34A36;
   --secondary-color: #B0A8B9;
-  --tertiary-color: #D5CABD;
-
-
+  --tertiary-color: #926C00;
+  --accent-color: #4E8397;
 }
 
 body {
@@ -20,7 +19,9 @@ header {
   padding: 1rem;
 }
 header img {
-
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
 }
 
 h1,
@@ -49,6 +50,10 @@ a,
 figcaption {
   font-size: 1.266em;
 }
+nav {
+  background-color: var(--tertiary-color);
+  padding: 0.25rem;
+}
 
 nav ul {
   display: flex;
@@ -57,6 +62,41 @@ nav ul {
 
 li {
   list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+#cta {
+  display: flex;
+  background-image: url("https://unsplash.com/photos/aNN7cWjfiqM");
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  justify-content: center;
+}
+
+#cta p {
+  color: var(--accent-color);
+  font-size: 2.4em;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.bg-trans {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  padding: 1rem;
+  text-align: center;
+}
+
+#cta a {
+  background: var(--color-primary);
+  padding: 0.5em;
+  border-radius: 3px;
+  box-shadow: 7px 15px 46px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
 /* Utility Class */
