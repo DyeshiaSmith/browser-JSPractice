@@ -14,8 +14,6 @@ body {
 
 header {
   background: var(--color-primary);
-  display: flex;
-  justify-content: center;
   padding: 1rem;
 }
 header img {
@@ -47,8 +45,10 @@ h3 {
 p,
 li,
 a,
+
 figcaption {
-  font-size: 1.266em;
+  font-size: 1.5em;
+  text-align: center;
 }
 nav {
   background-color: var(--tertiary-color);
@@ -105,6 +105,35 @@ a {
 }
 
 /* Utility Class */
+
+.flex {
+  display: flex;
+}
+
+.flex--align-items-center {
+  align-items: center;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--justify-content-center {
+  justify-content: center;
+}
+
+.flex--justify-content-space-around {
+  justify-content: space-around;
+}
+
+.flex--row {
+  flex-direction: row;
+}
+
+.img--responsive {
+  max-width: 100%;
+  height: auto;
+}
 
 /* https://css-tricks.com/snippets/css/accessibilityseo-friendly-css-hiding/ */
 .screen-reader-text {
