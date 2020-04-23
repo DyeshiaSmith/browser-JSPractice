@@ -89,6 +89,11 @@ a {
   padding: 1rem;
   text-align: center;
 }
+.button {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: solid thin var(--accent-color);
+}
 
 #cta a {
   background: var(--color-primary);
