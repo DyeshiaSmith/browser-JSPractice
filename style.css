@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background: var(--color-primary);
+  background: var(--secondary-color);
   padding: 1rem;
 }
 header img {
@@ -29,7 +29,7 @@ h3 {
 }
 
 h1 {
-  color: black;
+  color: var(--tertiary-color);
   font-size: 3.052em;
   text-align: center;
 }
@@ -148,4 +148,8 @@ a {
   position: absolute;
   top: -9999px;
   left: -9999px;
+}
+
+footer {
+
 }
