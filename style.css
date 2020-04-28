@@ -8,12 +8,13 @@
 body {
   /* try to load the font family from google, otherwise use a build in font. */
   font-family: "Open Sans", sans-serif;
+  background-color: var(--secondary-color);
   font-size: 10px;
   line-height: 1.65;
 }
 
 header {
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
   padding: 1rem;
 }
 header img {
@@ -42,13 +43,13 @@ h3 {
   font-size: 1.953em;
 }
 
-p,
-li,
-a,
+p, li, a, figcaption {
+  font-size: 1em;
+}
 
 /* select the odd */
 main > section:nth-of-type(odd) {
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
 }
 main > section:nth-of-type(even) {
   background: var(--tertiary-color);
@@ -60,12 +61,22 @@ figcaption {
 }
 nav {
   background-color: var(--tertiary-color);
-  padding: 0.25rem;
+  padding: 2rem;
+  font-size: 2em;
 }
 
 nav ul {
   display: flex;
   justify-content: space-evenly;
+}
+
+footer {
+  padding: 1rem;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 li {
@@ -97,10 +108,29 @@ a {
   padding: 1rem;
   text-align: center;
 }
+
+address li {
+  margin-right: 0;
+}
+
+address li ::after {
+  content: *\2022*;
+}
+
 .button {
   border-radius: 0.5rem;
   padding: 0.5rem;
   border: solid thin var(--accent-color);
+}
+.button:focus,
+.button:hover {
+}
+
+.fab {
+  margin-right: 0.125rem;
+}
+.fa-id-card-alt {
+  margin-right: 0.5rem;
 }
 
 #cta a {
@@ -143,6 +173,21 @@ a {
   height: auto;
 }
 
+.text-align--center {
+  text-align: center;
+}
+
+@media screen only and (min-width: 960px) {
+  .md-flex {
+    display: flex;
+  }
+}
+
+.md-flex-flex-direction--row {
+  flex-direction: row;
+}
+
+
 /* https://css-tricks.com/snippets/css/accessibilityseo-friendly-css-hiding/ */
 .screen-reader-text {
   position: absolute;
@@ -150,6 +195,3 @@ a {
   left: -9999px;
 }
 
-footer {
-
-}
