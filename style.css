@@ -88,9 +88,6 @@ label {
   margin-right: 0.25rem;
 }
 
-form > .flex {
-  margin: 1rem 0;
-}
 
 input,
 textarea {
@@ -169,6 +166,9 @@ address li ::after {
   display: flex;
 }
 
+form > .flex {
+  margin: 1rem 0;
+}
 
 .flex--align-items-center {
   align-items: center;
@@ -203,6 +203,10 @@ address li ::after {
   text-align: center;
 }
 
+textarea {
+  width: 75%;
+}
+
 @media screen only and (min-width: 960px) {
   .md-flex {
     display: flex;
@@ -213,11 +217,9 @@ address li ::after {
   flex-direction: row;
 }
 
-
 /* https://css-tricks.com/snippets/css/accessibilityseo-friendly-css-hiding/ */
 .screen-reader-text {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
-
