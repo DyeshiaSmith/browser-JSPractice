@@ -98,6 +98,10 @@ textarea {
   border-radius: 3px;
 }
 
+select {
+  color: black;
+}
+
 li {
   list-style-type: none;
 }
