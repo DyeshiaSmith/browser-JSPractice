@@ -79,6 +79,25 @@ footer li {
   margin-right: 0.5rem;
 }
 
+form {
+  background-color: var(--secondary-color);
+  padding: 1rem 0.5rem;
+}
+
+label {
+  margin-right: 0.25rem;
+}
+
+form > .flex {
+  margin: 1rem 0;
+}
+
+input,
+textarea {
+  border: solid thin black;
+  border-radius: 3px;
+}
+
 li {
   list-style-type: none;
 }
@@ -142,11 +161,10 @@ address li ::after {
   margin-bottom: 0.5rem;
 }
 
-/* Utility Class */
-
 .flex {
   display: flex;
 }
+
 
 .flex--align-items-center {
   align-items: center;
@@ -162,6 +180,10 @@ address li ::after {
 
 .flex--justify-content-space-around {
   justify-content: space-around;
+}
+
+.flex--justify-content-space-between {
+  justify-content: space-between;
 }
 
 .flex--row {
